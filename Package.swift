@@ -15,9 +15,13 @@ let package = Package(
             name: "SKPhotoBrowser",
             targets: ["SKPhotoBrowser"])
     ],
+	dependencies: [
+		.package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.1.0")
+	],
     targets: [
         .target(
             name: "SKPhotoBrowser",
+			dependencies: [],
             path: "SKPhotoBrowser")
     ]
 )
